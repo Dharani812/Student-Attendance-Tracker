@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Attendance Tracker</h1>
+
+    <!-- DASHBOARD -->
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <p id="totalStudents">0</p>
+        </div>
+
+        <div class="card good-card">
+            <h3>Good Attendance</h3>
+            <p id="goodStudents">0</p>
+        </div>
+
+        <div class="card low-card">
+            <h3>Low Attendance</h3>
+            <p id="lowStudents">0</p>
+        </div>
+
+        <div class="card present-card">
+            <h3>Total Present</h3>
+            <p id="totalPresent">0</p>
+        </div>
+
+        <div class="card absent-card">
+            <h3>Total Absent</h3>
+            <p id="totalAbsent">0</p>
+        </div>
+
+        <div class="card average-card">
+            <h3>Average Attendance</h3>
+            <p id="averageAttendance">0%</p>
+        </div>
+
+    </div>
+
+
+    <!-- ADD STUDENT -->
+
+    <div class="form">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Student Name">
+
+        <input
+            type="text"
+            id="regno"
+            placeholder="Register Number">
+
+        <button onclick="addStudent()">
+            Add Student
+        </button>
+
+    </div>
+
+
+    <!-- DATE -->
+
+    <div class="date-box">
+
+        <label>Select Date:</label>
+
+        <input
+            type="date"
+            id="attendanceDate">
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search by name or register number"
+            onkeyup="searchStudent()">
+
+    </div>
+
+
+    <!-- STUDENT TABLE -->
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Student Name</th>
+                <th>Register No</th>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Attendance</th>
+                <th>Alert</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="studentList"></tbody>
+
+    </table>
+
+
+    <!-- ================= TOP ATTENDANCE ================= -->
+
+    <div class="top-section">
+
+        <h2>🏆 Top Attendance</h2>
+
+        <div id="topAttendanceList"></div>
+
+    </div>
+
+
+    <!-- ================= CHARTS ================= -->
+
+    <div class="charts-section">
+
+        <h2>📈 Attendance Charts</h2>
+
+        <div class="chart-box">
+
+            <h3>Present vs Absent</h3>
+
+            <div class="bar-chart">
+
+                <div class="bar-item">
+
+                    <div
+                        id="presentBar"
+                        class="bar present-bar">
+                    </div>
+
+                    <span>Present</span>
+
+                    <b id="presentChartValue">0</b>
+
+                </div>
+
+
+                <div class="bar-item">
+
+                    <div
+                        id="absentBar"
+                        class="bar absent-bar">
+                    </div>
+
+                    <span>Absent</span>
+
+                    <b id="absentChartValue">0</b>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-box">
+
+            <h3>Student-wise Attendance</h3>
+
+            <div id="studentChart"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HISTORY ================= -->
+
+    <div
+        id="historySection"
+        class="history-section">
+
+        <h2>Attendance History</h2>
+
+        <div id="historyList"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PROFILE POPUP ================= -->
+
+<div
+    id="profileModal"
+    class="profile-modal">
+
+    <div class="profile-box">
+
+        <button
+            class="close-btn"
+            onclick="closeProfile()">
+
+            ✕
+
+        </button>
+
+        <h2>👤 Student Profile</h2>
+
+        <div
+            class="profile-name"
+            id="profileName">
+        </div>
+
+        <div class="profile-details">
+
+            <div class="profile-item">
+
+                <span>Register Number</span>
+
+                <b id="profileRegno"></b>
+
+            </div>
+
+            <div class="profile-item">
+
+                <span>Total Classes</span>
+
+                <b id="profileTotal"></b>
+
+            </div>
+
+            <div class="profile-item">
+
+                <span>Present</span>
+
+                <b id="profilePresent"></b>
+
+            </div>
+
+            <div class="profile-item">
+
+                <span>Absent</span>
+
+                <b id="profileAbsent"></b>
+
+            </div>
+
+            <div class="profile-item">
+
+                <span>Attendance</span>
+
+                <b id="profilePercentage"></b>
+
+            </div>
+
+        </div>
+
+        <h3>📅 Attendance History</h3>
+
+        <div id="profileHistory"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
