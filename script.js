@@ -7,8 +7,6 @@ let today =
 document.getElementById("attendanceDate").value = today;
 
 
-// ================= SAVE =================
-
 function saveData() {
 
     localStorage.setItem(
@@ -17,8 +15,6 @@ function saveData() {
     );
 }
 
-
-// ================= ADD STUDENT =================
 
 function addStudent() {
 
@@ -52,8 +48,6 @@ function addStudent() {
     refresh();
 }
 
-
-// ================= EDIT =================
 
 function editStudent(index) {
 
@@ -108,8 +102,6 @@ function editStudent(index) {
 }
 
 
-// ================= PRESENT =================
-
 function markPresent(index) {
 
     let date =
@@ -157,7 +149,7 @@ function markPresent(index) {
 }
 
 
-// ================= ABSENT =================
+
 
 function markAbsent(index) {
 
@@ -206,7 +198,7 @@ function markAbsent(index) {
 }
 
 
-// ================= DELETE =================
+
 
 function deleteStudent(index) {
 
@@ -226,7 +218,7 @@ function deleteStudent(index) {
 }
 
 
-// ================= SEARCH =================
+
 
 function searchStudent() {
 
@@ -254,7 +246,6 @@ function searchStudent() {
 }
 
 
-// ================= DISPLAY STUDENTS =================
 
 function displayStudents(data) {
 
@@ -432,7 +423,7 @@ function displayStudents(data) {
 }
 
 
-// ================= PARENT ALERT =================
+
 
 function parentAlert(index) {
 
@@ -470,7 +461,6 @@ function parentAlert(index) {
 }
 
 
-// ================= DASHBOARD =================
 
 function updateDashboard() {
 
@@ -567,7 +557,7 @@ function updateDashboard() {
 }
 
 
-// ================= TOP ATTENDANCE =================
+
 
 function updateTopAttendance() {
 
@@ -687,8 +677,6 @@ function updateTopAttendance() {
 }
 
 
-// ================= PROFILE =================
-
 function showProfile(index) {
 
     let student =
@@ -802,8 +790,6 @@ function showProfile(index) {
 }
 
 
-// ================= CLOSE PROFILE =================
-
 function closeProfile() {
 
     document.getElementById(
@@ -828,7 +814,6 @@ window.onclick = function(event) {
 };
 
 
-// ================= CHART =================
 
 function updateCharts() {
 
@@ -944,7 +929,7 @@ function updateCharts() {
 }
 
 
-// ================= HISTORY =================
+
 
 function displayHistory() {
 
@@ -1045,7 +1030,6 @@ function displayHistory() {
 }
 
 
-// ================= SHOW HISTORY =================
 
 function showStudentHistory(index) {
 
@@ -1152,7 +1136,6 @@ function showStudentHistory(index) {
 }
 
 
-// ================= REFRESH =================
 
 function refresh() {
 
@@ -1168,6 +1151,6 @@ function refresh() {
 }
 
 
-// ================= INITIAL LOAD =================
+
 
 refresh();
