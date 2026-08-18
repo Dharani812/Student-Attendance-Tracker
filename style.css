@@ -23,7 +23,7 @@ h1 {
 }
 
 
-/* DASHBOARD */
+
 
 .dashboard {
     display: grid;
@@ -71,7 +71,7 @@ h1 {
 }
 
 
-/* FORM */
+
 
 .form {
     display: flex;
@@ -103,7 +103,7 @@ button:hover {
 }
 
 
-/* DATE */
+
 
 .date-box {
     margin-bottom: 15px;
@@ -115,7 +115,7 @@ button:hover {
 }
 
 
-/* SEARCH */
+
 
 .search {
     margin-bottom: 25px;
@@ -126,7 +126,7 @@ button:hover {
 }
 
 
-/* BUTTONS */
+
 
 .present {
     background: #22c55e;
@@ -155,7 +155,6 @@ button:hover {
 }
 
 
-/* TABLE */
 
 table {
     width: 100%;
@@ -175,7 +174,7 @@ th {
 }
 
 
-/* STUDENT NAME */
+
 
 .student-name-link {
     color: #2563eb;
@@ -188,7 +187,7 @@ th {
 }
 
 
-/* ALERT */
+
 
 .alert {
     color: red;
@@ -201,7 +200,7 @@ th {
 }
 
 
-/* PROGRESS */
+
 
 .progress-container {
     width: 120px;
@@ -227,7 +226,7 @@ th {
 }
 
 
-/* ACTION */
+
 
 .action-buttons {
     display: flex;
@@ -242,7 +241,7 @@ th {
 }
 
 
-/* ================= TOP ATTENDANCE ================= */
+
 
 .top-section {
     margin-top: 45px;
@@ -295,7 +294,7 @@ th {
 }
 
 
-/* CHARTS */
+
 
 .charts-section {
     margin-top: 45px;
@@ -319,7 +318,7 @@ th {
 }
 
 
-/* BAR CHART */
+
 
 .bar-chart {
     height: 300px;
@@ -357,7 +356,6 @@ th {
 }
 
 
-/* STUDENT CHART */
 
 .student-chart-row {
     display: flex;
@@ -392,7 +390,6 @@ th {
 }
 
 
-/* HISTORY */
 
 .history-section {
     margin-top: 40px;
@@ -417,7 +414,7 @@ th {
 }
 
 
-/* PROFILE */
+
 
 .profile-modal {
     display: none;
@@ -510,7 +507,6 @@ th {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 800px) {
 
